@@ -5,23 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="main.js"></script>
+  </head>
   </head>
   <body>
     <form name="task" id="task1"></form>
       <fieldset>
         <h1>Speed</h1>
-        <input type="text" id="speed" name="speed"/>
+        <input type="number" id="speed"/>
 
         <h1>Time</h1>
-        <input type="text" id="time" name="time" />
+        <input type="number" id="time" />
         
         <p></p>
-        <input type="button" name="inp" value="Submit" id="ok" onclick= 'tasks()'>
-        <input type="reset" name="clean" value="Clear">
-        <h2>distance = </h2>
+        <input type="button" value="Submit" id="ok" />
+        <input type="reset"  value="Clear"/>
+        <h2 id="res">distance = </h2>
       </fieldset>
-  </form>
+     </form>
+    <script src="main.js"></script>
   </body>
 </html>
