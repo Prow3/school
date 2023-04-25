@@ -6,7 +6,18 @@ function v1() {
 
   let speed = document.getElementById("speed").value;
   let time = document.getElementById("time").value;
-  let res = Number(speed) + Number(time);
+  let res = speed * time;
+  speed = Number(speed);
+  time = Number(time);
+  if (speed < 0) {
+    document.getElementById("res").innerHTML = "Швидкість має бути більш ніж 0";
+    throw Error;
+  }
+  if (time < 0) {
+    document.getElementById("res").innerHTML = "час має бути більш ніж 0";
+    throw Error;
+  }
+
   // console.log(speed);
 
   // alert(res);
