@@ -6,13 +6,13 @@ function v1() {
   let res = speed * time;
   speed = Number(speed);
   time = Number(time);
-  if (speed < 0) {
+  if (speed <= 0) {
     document.getElementById("res").innerHTML = "Швидкість має бути більш ніж 0";
-    throw Error;
+    throw Error("Швидкість має бути більш ніж 0");
   }
-  if (time < 0) {
+  if (time <= 0) {
     document.getElementById("res").innerHTML = "час має бути більш ніж 0";
-    throw Error;
+    throw Error("час має бути більш ніж 0");
   }
 
   document.getElementById("res").innerHTML = h2res + res;
