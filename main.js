@@ -1,5 +1,5 @@
 const button = document.getElementById("ok");
-let h2res = document.getElementById("res").innerHTML;
+const h2res = document.getElementById("res").innerHTML;
 function v1() {
   let speed = document.getElementById("speed").value;
   let time = document.getElementById("time").value;
