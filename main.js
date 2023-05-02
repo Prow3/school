@@ -10,6 +10,9 @@ function v1() {
   cop = cop % 100;
   let res = grn + " гривень та " + cop + " копiйок";
   document.getElementById("res").innerHTML = res;
+}
+button.addEventListener("click", v1);
+function ab() {
   var audio = new Audio();
   audio.preload = "auto";
   audio.src =
@@ -21,4 +24,3 @@ function v1() {
     "https://cdn.discordapp.com/attachments/894902167314501633/1103005130657378405/padenie-truby.mp3";
   audio.play();
 }
-button.addEventListener("click", v1);
