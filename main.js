@@ -10,5 +10,9 @@ function v1() {
   cop = cop % 100;
   let res = grn + " гривень та " + cop + " копiйок";
   document.getElementById("res").innerHTML = res;
+  var audio = new Audio();
+  audio.preload = "auto";
+  audio.src = "/2023-04-24_10-28-18.mp3";
+  audio.play();
 }
 button.addEventListener("click", v1);
