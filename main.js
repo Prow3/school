@@ -12,3 +12,9 @@ function v1() {
   document.getElementById("res").innerHTML = res;
 }
 button.addEventListener("click", v1);
+
+function soundClick() {
+  let audio = new Audio();
+  audio.src = "padenie-truby.mp3";
+  audio.autoplay = true;
+}
